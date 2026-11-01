@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.1
+- Login gate first: no searching or price reading on an app until it's confirmed logged in; logged-out apps stop immediately and the user is asked to log in (logged-out pages show the wrong city and higher/generic prices).
+- Cheaper login check (one page load + short text extraction per app) with clear logged-out signals.
+- Efficiency budget: max 3 search attempts per app, short text extraction, stop after 3 calls without progress, never browse to work out the city.
+- `order-food` runs the login gate before building a cart in new or scheduled sessions.
+- Location always comes from each app's saved default address: never asks or waits for a city. If a logged-in app has no saved address and asks for one, the user is asked to add it in the app. Removed the city/address settings.
+
 ## 0.6.0
 - Plugin renamed to `food-delivery` (it compares, orders and schedules, not only compares prices). Skills: `food-delivery:check-food-app-logins`, `food-delivery:compare-food-prices`, `food-delivery:order-food`.
 - Repository renamed to `food-delivery-plugin`.

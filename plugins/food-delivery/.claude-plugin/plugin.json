@@ -1,6 +1,6 @@
 {
   "name": "food-delivery",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Compare a restaurant's prices across Glovo, Wolt and Bolt Food in any city they serve, using the Claude desktop browser: status, menu prices, promos, delivery and service fees. Builds the cart on the app you choose and places orders only on explicit confirmation, including scheduled orders.",
   "author": {
     "name": "Valentin"

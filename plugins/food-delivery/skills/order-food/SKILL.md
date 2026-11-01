@@ -9,7 +9,7 @@ description: >
   only after an explicit yes to the exact items and total, and helps debug checkout errors. Also used
   for "schedule this order for 5 PM / tonight / tomorrow" and when a scheduled food-order task runs.
 metadata:
-  version: "0.6.0"
+  version: "0.6.1"
 ---
 
 # Order food (choose dishes → cart summary → debug)
@@ -27,7 +27,7 @@ Steps 3-6 of the flow: **login → compare → choose app & dishes → cart summ
 
 ## Step 3 - Choose dishes
 
-Work in the tab of the app the user chose (reuse the tab from `compare-food-prices` if still open; otherwise open the restaurant page again following Step 0 of that skill).
+Work in the tab of the app the user chose (reuse the tab from `compare-food-prices` if still open; otherwise open the restaurant page again following Step 0 of that skill). If the app isn't confirmed logged in (e.g. a new session or a scheduled run), run the login gate from `check-food-app-logins` first and stop if it fails — never build a cart on a logged-out app.
 
 **If the user did not name dishes:**
 1. Read the restaurant's full menu with `get_page_text`.
