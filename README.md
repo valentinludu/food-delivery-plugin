@@ -1,29 +1,33 @@
-# claude-food-delivery-plugin
+# food-delivery-plugin
 
-A Claude plugin for food delivery apps.
+An AI-agent plugin for food delivery apps (Glovo, Wolt, Bolt Food). Currently packaged for Claude (Claude desktop / Cowork and Claude Code); the skills are plain Markdown `SKILL.md` files, so other agents that support skills can reuse them.
 
-Claude plugin marketplace containing **food-delivery-price-compare**: compare a restaurant's prices across **Glovo, Wolt and Bolt Food**, then build the cart and order on the app you choose — only after your explicit confirmation.
+This repo is a Claude plugin marketplace containing **food-delivery-price-compare**: compare a restaurant's prices across **Glovo, Wolt and Bolt Food**, then build the cart and order on the app you choose — only after your explicit confirmation.
 
 Works in any city these apps serve. Currently supports these three vendors only.
 
 ## Install
 
-**Claude desktop (Cowork):** in the plugin settings, add the marketplace `valentinludu/claude-food-delivery-plugin` (or its GitHub URL), then install **food-delivery-price-compare**. You can also install a `.plugin` file built from `plugins/food-delivery-price-compare`.
+**Claude desktop (Cowork):** in the plugin settings, add the marketplace `valentinludu/food-delivery-plugin` (or its GitHub URL), then install **food-delivery-price-compare**. You can also install a `.plugin` file built from `plugins/food-delivery-price-compare`.
 
 **Claude Code:**
 
 ```
-/plugin marketplace add valentinludu/claude-food-delivery-plugin
+/plugin marketplace add valentinludu/food-delivery-plugin
 /plugin install food-delivery-price-compare@valentinludu-plugins
 ```
 
 Or in one step (Claude Code 2.1.275+):
 
 ```
-/plugin install food-delivery-price-compare --marketplace valentinludu/claude-food-delivery-plugin
+/plugin install food-delivery-price-compare --marketplace valentinludu/food-delivery-plugin
 ```
 
 Then follow the plugin's [README](plugins/food-delivery-price-compare/README.md).
+
+## Other agents (planned)
+
+The workflow lives in `plugins/food-delivery-price-compare/skills/*/SKILL.md` (Markdown + YAML frontmatter). Packaging for other agents can be added next to the Claude one, e.g. `adapters/<agent>/`, reusing the same skills.
 
 ## Repository layout
 

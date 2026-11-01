@@ -5,8 +5,8 @@
   "author": {
     "name": "Valentin"
   },
-  "homepage": "https://github.com/valentinludu/claude-food-delivery-plugin",
-  "repository": "https://github.com/valentinludu/claude-food-delivery-plugin",
+  "homepage": "https://github.com/valentinludu/food-delivery-plugin",
+  "repository": "https://github.com/valentinludu/food-delivery-plugin",
   "license": "MIT",
   "keywords": ["food-delivery", "price-comparison", "glovo", "wolt", "bolt-food", "browser", "ordering"]
 }
