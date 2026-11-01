@@ -2,14 +2,14 @@
 name: order-food
 description: >
   This skill should be used after a price comparison when the user picks an app ("let's go with Glovo",
-  "order from Wolt", "use Bolt"), or says "show me the menu", "add these to cart", "what's in my cart",
-  "simulate the checkout", or reports "my order failed" / "my card doesn't work" on Glovo, Wolt or Bolt Food.
+  "order from Wolt", "use Uber Eats", "Lieferando"), or says "show me the menu", "add these to cart", "what's in my cart",
+  "simulate the checkout", or reports "my order failed" / "my card doesn't work" on any of their delivery apps.
   Also used when the user says "place the order", "pay", "order it". Shows dishes, adds to cart only
   after confirmation, shows the cart/checkout summary, places the order with the saved payment method
   only after an explicit yes to the exact items and total, and helps debug checkout errors. Also used
   for "schedule this order for 5 PM / tonight / tomorrow" and when a scheduled food-order task runs.
 metadata:
-  version: "0.6.1"
+  version: "0.7.0"
 ---
 
 # Order food (choose dishes → cart summary → debug)
@@ -67,7 +67,7 @@ Repeat until the user confirms the final list. Then restate it in one line (dish
 
    If the user prefers, they can also press the button themselves in the browser pane.
 
-Record where the cart and fees were found; if it differs from `../compare-food-prices/references/apps.md`, add a "Plugin maintenance" note with the exact change.
+Record where the cart and fees were found; if it differs from the app's file in `../compare-food-prices/references/vendors/`, add a "Plugin maintenance" note with the exact change.
 
 ## Step 5 - Place the order (only on explicit yes)
 
@@ -103,9 +103,9 @@ Record where the cart and fees were found; if it differs from `../compare-food-p
 3. **Pick the app:** saved app if it's still cheapest by items + delivery, or if switching wasn't allowed. If another app is now cheaper and switching was allowed, include that in the question instead of switching silently.
 4. **Build the cart** on the chosen app (this saved schedule is the user's confirmation of the dish list) and read the checkout summary (Step 4).
 5. **Ask via notification** — send the question as a push notification (PushNotification tool if available) and as a chat message (SendUserMessage), e.g.:
-   > "<Restaurant> at <time>: Wolt is still cheapest — 1× <dish>, 1× <dish>, total <total> <currency>, Visa, <your address>. Place it? (yes / no)"
+   > "<Restaurant> at <time>: <App> is still cheapest — 1× <dish>, 1× <dish>, total <total> <currency>, Visa, <your address>. Place it? (yes / no)"
    or, if cheaper elsewhere:
-   > "Glovo is now cheaper than Wolt (<x> vs <y> <currency>). Reply: glovo / wolt / cancel."
+   > "<Other app> is now cheaper than <App> (<x> vs <y> <currency>). Reply: <other app> / <app> / cancel."
 6. **Wait for the reply** up to the saved timeout. Only an explicit yes (for the stated app and total) leads to Step 5 (re-check, press once, report). On "glovo"/"wolt", build that cart, show its total, and ask for the final yes again.
 7. **No reply by the timeout** → don't pay. Notify "Order not placed (no reply); items left in the <app> cart" and stop.
 8. Finish with a short notification of the outcome (order number + ETA, or why nothing was ordered).

@@ -1,10 +1,10 @@
 # food-delivery-plugin
 
-An AI-agent plugin for food delivery apps (Glovo, Wolt, Bolt Food). Currently packaged for Claude (Claude desktop / Cowork and Claude Code); the skills are plain Markdown `SKILL.md` files, so other agents that support skills can reuse them.
+An AI-agent plugin for food delivery apps (Glovo, Wolt, Bolt Food, Uber Eats, Deliveroo, Just Eat Takeaway brands, foodora and more). Currently packaged for Claude (Claude desktop / Cowork and Claude Code); the skills are plain Markdown `SKILL.md` files, so other agents that support skills can reuse them.
 
-This repo is a Claude plugin marketplace containing **food-delivery**: compare a restaurant's prices across **Glovo, Wolt and Bolt Food**, then build the cart and order on the app you choose — only after your explicit confirmation.
+This repo is a Claude plugin marketplace containing **food-delivery**: compare a restaurant's prices across your European food delivery apps (**Glovo, Wolt, Bolt Food, Uber Eats, Deliveroo, Just Eat Takeaway brands, foodora** and more), then build the cart and order on the app you choose — only after your explicit confirmation.
 
-Works in any city these apps serve. Currently supports these three vendors only.
+Works wherever these apps deliver. Glovo, Wolt and Bolt Food are verified; the others use a generic method until a real run verifies them (see `plugins/food-delivery/skills/compare-food-prices/references/vendors/`).
 
 ## Install
 
@@ -48,7 +48,7 @@ plugins/food-delivery/     # the plugin
 
 ## Contributing
 
-Issues and PRs welcome — especially updated entry URLs / cart flows for other countries in `skills/compare-food-prices/references/apps.md`. Never commit cookies, tokens, addresses or payment details.
+Issues and PRs welcome — especially new vendors and verified entry URLs / login labels / cart flows in `plugins/food-delivery/skills/compare-food-prices/references/vendors/`. Never commit cookies, tokens, addresses or payment details.
 
 ## License
 

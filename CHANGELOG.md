@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.0
+- European vendors: per-vendor registry in `references/vendors/` (Glovo, Wolt, Bolt Food verified; Uber Eats, Deliveroo, Just Eat Takeaway brands, foodora, efood, Foody, Yemeksepeti unverified) with a generic method and a template for adding more.
+- "My apps" setting: only the user's apps are opened and only their vendor files are read (asks once if empty).
+- Apps are resolved before any tab opens: named in message → "My food apps" profile preference → settings → memory → ask once "Which delivery apps do you use?" (only if the user doesn't know or gives a country, Claude web-searches the current main apps there and confirms). Never opens apps outside the list, max 4 per run.
+- No country lists in the plugin (they change too often); vendor files hold only how each site works.
+- Report columns follow the user's apps. `apps.md` replaced by `vendors/` (old file left as a pointer; delete it).
+
 ## 0.6.1
 - Login gate first: no searching or price reading on an app until it's confirmed logged in; logged-out apps stop immediately and the user is asked to log in (logged-out pages show the wrong city and higher/generic prices).
 - Cheaper login check (one page load + short text extraction per app) with clear logged-out signals.
