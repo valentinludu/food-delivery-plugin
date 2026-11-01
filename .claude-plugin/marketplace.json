@@ -10,11 +10,11 @@
     {
       "name": "food-delivery",
       "source": "./plugins/food-delivery",
-      "description": "Compare Glovo, Wolt and Bolt Food prices for a restaurant, then build the cart and order on explicit confirmation.",
-      "version": "0.6.1",
+      "description": "Compare a restaurant's prices across your European food delivery apps, then build the cart and order on explicit confirmation.",
+      "version": "0.7.0",
       "author": { "name": "Valentin" },
       "license": "MIT",
-      "keywords": ["food-delivery", "price-comparison", "glovo", "wolt", "bolt-food"]
+      "keywords": ["food-delivery", "price-comparison", "europe", "glovo", "wolt", "bolt-food", "uber-eats", "deliveroo", "just-eat", "foodora"]
     }
   ]
 }

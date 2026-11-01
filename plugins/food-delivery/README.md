@@ -1,6 +1,6 @@
 # food-delivery
 
-A Claude plugin (Claude desktop / Cowork, also Claude Code) that finds which delivery app — **Glovo, Wolt or Bolt Food** — gives the lowest real price for a restaurant, in any city where these apps operate.
+A Claude plugin (Claude desktop / Cowork, also Claude Code) that finds which delivery app — your European food delivery apps — **Glovo, Wolt, Bolt Food, Uber Eats, Deliveroo, Just Eat Takeaway brands (Just Eat, Lieferando, Thuisbezorgd, Pyszne, Takeaway.com), foodora, efood, Foody, Yemeksepeti** — gives the lowest real price for a restaurant, in any city where these apps operate.
 
 It uses the browser the way you would: searches each app (handling name variants like "Pho Bar" / "PhoBar"), reads open/closed status, menu prices and promotions, then — on the app you choose — builds the cart and shows the full fee breakdown. It places the order only on your explicit confirmation and never types passwords or card details.
 
@@ -29,13 +29,13 @@ Say "schedule this for 5 PM". At that time Claude re-checks prices on all apps, 
 
 1. Install the plugin. Claude Code: `/plugin install food-delivery --marketplace valentinludu/food-delivery-plugin`. Claude desktop: add the marketplace `valentinludu/food-delivery-plugin` in the plugin settings.
 2. Open the built-in browser in Claude desktop (Cmd+Shift+B / Ctrl+Shift+B) and say **"check my food app logins"**. Log in to each app yourself; logins persist.
-3. Optional: fill in `skills/compare-food-prices/references/settings.md` (city, apps, preferred branches, default order, timeout).
+3. Tell Claude which apps you use once — best saved in your Claude profile preferences as `My food apps: Glovo, Wolt, Bolt Food` so every chat knows it. Only those apps are opened (max 4); others are never tried. Optional plugin settings: preferred branches, default order, timeout.
 
 Browser: Claude desktop built-in browser (preferred) or the Claude in Chrome extension.
 
 ## Maintenance (self-healing)
 
-App URLs change. When an entry point in `skills/compare-food-prices/references/apps.md` stops working, Claude falls back to the app's homepage search, finishes the job, and tells you which line to update.
+App URLs change. When an entry point in a vendor file (`skills/compare-food-prices/references/vendors/`) stops working, Claude falls back to the app's homepage search, finishes the job, and tells you which line to update.
 
 ## Disclaimer
 

@@ -1,12 +1,12 @@
 {
   "name": "food-delivery",
-  "version": "0.6.1",
-  "description": "Compare a restaurant's prices across Glovo, Wolt and Bolt Food in any city they serve, using the Claude desktop browser: status, menu prices, promos, delivery and service fees. Builds the cart on the app you choose and places orders only on explicit confirmation, including scheduled orders.",
+  "version": "0.7.0",
+  "description": "Compare a restaurant's prices across your European food delivery apps (Glovo, Wolt, Bolt Food, Uber Eats, Deliveroo, Just Eat Takeaway brands, foodora and more) using the Claude desktop browser: status, menu prices, promos, delivery and service fees. Builds the cart on the app you choose and places orders only on explicit confirmation, including scheduled orders.",
   "author": {
     "name": "Valentin"
   },
   "homepage": "https://github.com/valentinludu/food-delivery-plugin",
   "repository": "https://github.com/valentinludu/food-delivery-plugin",
   "license": "MIT",
-  "keywords": ["food-delivery", "price-comparison", "glovo", "wolt", "bolt-food", "browser", "ordering"]
+  "keywords": ["food-delivery", "price-comparison", "europe", "glovo", "wolt", "bolt-food", "uber-eats", "deliveroo", "just-eat", "lieferando", "foodora", "browser", "ordering"]
 }
