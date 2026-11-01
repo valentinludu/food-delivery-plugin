@@ -1,0 +1,12 @@
+{
+  "name": "food-delivery-price-compare",
+  "version": "0.5.0",
+  "description": "Compare a restaurant's prices across Glovo, Wolt and Bolt Food in any city they serve, using the Claude desktop browser: status, menu prices, promos, delivery and service fees. Builds the cart on the app you choose and places orders only on explicit confirmation, including scheduled orders.",
+  "author": {
+    "name": "Valentin"
+  },
+  "homepage": "https://github.com/valentinludu/food-delivery-price-compare",
+  "repository": "https://github.com/valentinludu/food-delivery-price-compare",
+  "license": "MIT",
+  "keywords": ["food-delivery", "price-comparison", "glovo", "wolt", "bolt-food", "browser", "ordering"]
+}

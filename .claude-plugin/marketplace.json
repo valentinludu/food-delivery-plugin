@@ -1,0 +1,20 @@
+{
+  "name": "valentinludu-plugins",
+  "owner": {
+    "name": "Valentin"
+  },
+  "metadata": {
+    "description": "Claude plugins by Valentin"
+  },
+  "plugins": [
+    {
+      "name": "food-delivery-price-compare",
+      "source": "./plugins/food-delivery-price-compare",
+      "description": "Compare Glovo, Wolt and Bolt Food prices for a restaurant, then build the cart and order on explicit confirmation.",
+      "version": "0.5.0",
+      "author": { "name": "Valentin" },
+      "license": "MIT",
+      "keywords": ["food-delivery", "price-comparison", "glovo", "wolt", "bolt-food"]
+    }
+  ]
+}

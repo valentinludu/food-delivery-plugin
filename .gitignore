@@ -1,0 +1,9 @@
+.DS_Store
+*.plugin
+*.zip
+.env
+*.env
+# never commit anything that looks like a login or personal data
+*cookie*
+*token*
+*.har
