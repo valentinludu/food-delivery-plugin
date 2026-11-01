@@ -6,7 +6,7 @@ description: >
   or before a price comparison when an app appears logged out. Opens Glovo, Wolt and Bolt Food
   in the browser, reports which are logged in, and walks the user through logging in themselves.
 metadata:
-  version: "0.5.0"
+  version: "0.6.0"
 ---
 
 # Check food app logins

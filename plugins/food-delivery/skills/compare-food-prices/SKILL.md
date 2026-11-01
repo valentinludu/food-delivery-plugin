@@ -7,7 +7,7 @@ description: >
   delivery price in their city (any country where these apps operate). Compares status, menu prices, promotions and delivery fees across
   Glovo, Wolt and Bolt Food in the browser, read-only (no cart), then asks which app to use.
 metadata:
-  version: "0.5.0"
+  version: "0.6.0"
 ---
 
 # Compare food delivery prices (Glovo / Wolt / Bolt Food)

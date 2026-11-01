@@ -1,7 +1,11 @@
 # Changelog
 
+## 0.6.0
+- Plugin renamed to `food-delivery` (it compares, orders and schedules, not only compares prices). Skills: `food-delivery:check-food-app-logins`, `food-delivery:compare-food-prices`, `food-delivery:order-food`.
+- Repository renamed to `food-delivery-plugin`.
+
 ## 0.5.0
-- Renamed to `food-delivery-price-compare`; works in any city served by Glovo, Wolt or Bolt Food (no longer Bucharest-only).
+- Renamed (from `food-price-compare`); works in any city served by Glovo, Wolt or Bolt Food (no longer Bucharest-only).
 - Country/city and timeout settings; currency taken from the apps; local-language button names.
 - Packaged as a GitHub plugin marketplace.
 

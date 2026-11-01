@@ -1,4 +1,4 @@
-# food-delivery-price-compare
+# food-delivery
 
 A Claude plugin (Claude desktop / Cowork, also Claude Code) that finds which delivery app — **Glovo, Wolt or Bolt Food** — gives the lowest real price for a restaurant, in any city where these apps operate.
 
@@ -27,7 +27,7 @@ Say "schedule this for 5 PM". At that time Claude re-checks prices on all apps, 
 
 ## Setup
 
-1. Install the plugin. Claude Code: `/plugin install food-delivery-price-compare --marketplace valentinludu/food-delivery-plugin`. Claude desktop: add the marketplace `valentinludu/food-delivery-plugin` in the plugin settings.
+1. Install the plugin. Claude Code: `/plugin install food-delivery --marketplace valentinludu/food-delivery-plugin`. Claude desktop: add the marketplace `valentinludu/food-delivery-plugin` in the plugin settings.
 2. Open the built-in browser in Claude desktop (Cmd+Shift+B / Ctrl+Shift+B) and say **"check my food app logins"**. Log in to each app yourself; logins persist.
 3. Optional: fill in `skills/compare-food-prices/references/settings.md` (city, apps, preferred branches, default order, timeout).
 

@@ -9,7 +9,7 @@ description: >
   only after an explicit yes to the exact items and total, and helps debug checkout errors. Also used
   for "schedule this order for 5 PM / tonight / tomorrow" and when a scheduled food-order task runs.
 metadata:
-  version: "0.5.0"
+  version: "0.6.0"
 ---
 
 # Order food (choose dishes → cart summary → debug)
